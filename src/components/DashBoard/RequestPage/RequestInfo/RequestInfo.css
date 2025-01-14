@@ -1,0 +1,35 @@
+.Req {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 4%;
+}
+.ReqName {
+  padding-left: 1rem;
+}
+.ReqAccept,
+.ReqDecline {
+  width: 10vw; /* Set width relative to viewport */
+  height: 5vw; /* Set height relative to viewport */
+  max-width: 120px; /* Ensure maximum size */
+  max-height: 40px;
+}
+
+.Accept,
+.Decline {
+  width: 100%; /* Scale to parent width */
+  height: 100%; /* Scale to parent height */
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.Decline {
+  background-color: #e54646;
+}
+.Accept {
+  background-color: #7ebe2c;
+}

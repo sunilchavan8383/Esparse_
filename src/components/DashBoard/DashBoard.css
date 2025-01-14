@@ -1,0 +1,164 @@
+.adminContainer {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0.3fr 5fr;
+    grid-template-columns: auto;
+  }
+  
+  .LgContainer {
+    display: flex;
+    max-height: 80px;
+    width: 100%;
+    padding: 0 1rem;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  
+  .tools {
+    height: calc(
+      100vh - 80px
+    ); /* Full height minus header/footer or other offsets */
+    overflow: hidden; /* Prevent horizontal overflow */
+    display: grid;
+    grid-template-columns: 1.5fr 5fr; /* Adjust grid column ratios */
+  }
+  
+  .toolscontainer {
+    padding-top: 2rem; /* Add spacing at the top */
+    background-color: #8a4fff; /* Background color */
+    color: white; /* Text color */
+    font-size: 16px; /* Font size */
+    line-height: 30px; /* Line height for readability */
+    gap: 3%; /* Spacing between elements */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: stretch; /* Stretch items to fit container width */
+    justify-content: flex-start; /* Align items to the top */
+    overflow-y: auto; /* Enable vertical scrolling for overflowing content */
+    height: 100%; /* Take full height of the parent container */
+    max-height: 100%; /* Prevent growth beyond parent container height */
+    box-sizing: border-box; /* Include padding and borders in the element's dimensions */
+    flex-shrink: 0; /* Prevent shrinking */
+  }
+  
+  .Notcontainer {
+    display: flex;
+    gap: 1rem;
+    padding-right: 2rem;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+  }
+  
+  .t1 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2rem;
+    text-align: left;
+    height: 35px;
+
+  }
+  #Dashboard{
+    background-color: white;
+    color: #8a4fff;
+    border-radius: 10px 0px 0px 10px;
+  }
+  .t1 a{
+    color: white;
+    text-decoration: none;
+  }
+  .t11 a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .t11 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+  
+  .NotBut {
+    background-color: #453823;
+    color: white;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    font-size: 14px;
+    padding: 10px;
+    line-height: 22px;
+    cursor: pointer; /* Add a pointer cursor */
+  }
+  
+  .NotSearch input {
+    border-radius: 20px;
+    border: none;
+    background-color: #f0ebff;
+    padding: 10px 15px;
+    width: 300px;
+  }
+  
+  input[type="search"]::placeholder {
+    font-size: 14px;
+    line-height: 21px;
+    color: #8a4fff;
+    font-weight: 400;
+  }
+  
+  .features {
+    max-height: 100%;
+    width: 100%;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .tools {
+      grid-template-columns: 1fr; /* Stack columns vertically */
+    }
+  
+    .toolscontainer {
+      max-height: calc(
+        100vh - 120px
+      ); /* Adjust based on available viewport height */
+      overflow-y: auto; /* Enable scrolling */
+    }
+  
+    .LgContainer {
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start;
+    }
+  
+    .NotSearch input {
+      width: 100%; /* Full width on smaller screens */
+    }
+  
+    .Notcontainer {
+      padding-right: 1rem; /* Adjust padding */
+      flex-wrap: wrap; /* Ensure content wraps */
+    }
+  
+    .t1,
+    .t11 {
+      padding-left: 1rem; /* Reduce padding */
+      margin-top: 2rem; /* Adjust margin */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .NotBut {
+      font-size: 12px; /* Smaller font size for buttons */
+      padding: 8px; /* Adjust padding */
+    }
+  
+    input[type="search"]::placeholder {
+      font-size: 12px; /* Adjust placeholder font size */
+    }
+  
+    .toolscontainer {
+      padding-top: 0.5rem; /* Reduce padding */
+    }
+  }
+  

@@ -1,0 +1,77 @@
+.PaymentManageDiv{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 5fr;
+    grid-template-columns: 1fr;
+   
+}
+
+.Payment{
+    height: 100%;
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.PaymentManagement{
+    height: 100%;
+    width: 100%;
+
+}
+
+
+.PaymentText p{
+    font-size: 22px;
+    color: #453823;
+    margin-left: 2rem;
+}
+.TotalPayment,.PendingPayment,.AcceptedPayment{
+    height: 100%;
+    width: 25%;
+    border-radius: 10px;
+    border: 2px solid;
+    display: flex;
+    
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+
+}
+.TotalPayment{
+    border-color: #453823;
+
+}
+.PendingPayment{
+    border-color: #E54646;
+
+}
+.AcceptedPayment{
+    border-color: #7EBE2C;
+
+}
+.PaymentInfo{
+    display: flex;
+    flex-direction: row;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+.PaymentOverview{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    padding-bottom: 0px;
+}
+.Overview{
+    font-size: 24px;
+    color: #453823;
+    font-weight: 500;
+}
+.History{
+    color: #453823;
+}

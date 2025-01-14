@@ -1,0 +1,160 @@
+.otp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Add padding for small screens */
+}
+
+.otp-card {
+  background-color: #f0ebff;
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  max-width: 90%; /* Limit the width for smaller screens */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.icon-wrapper {
+  background-color: #e9dcff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.shield-icon {
+  width: 40px;
+  height: 40px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #4e4e4e;
+  font-family: "Poppins", sans-serif;
+}
+
+.email-placeholder {
+  font-size: 14px;
+  color: #6b6b6b;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.otp-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.otp-input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 2px solid #a386ff;
+  border-radius: 5px;
+  font-size: 18px;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.otp-input:focus {
+  border-color: #7d6eff;
+  box-shadow: 0 0 5px rgba(125, 110, 255, 0.5);
+  font-family: "Poppins", sans-serif;
+}
+
+.verify-btn {
+  background-color: #7d6eff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.verify-btn:hover {
+  font-family: "Poppins", sans-serif;
+  background-color: #684cd4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .otp-card {
+    padding: 15px;
+    max-width: 100%; /* Full width on smaller screens */
+  }
+
+  .icon-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .shield-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  h3 {
+    font-size: 16px; /* Reduce font size */
+  }
+
+  .email-placeholder {
+    font-size: 12px; /* Reduce font size */
+  }
+
+  .otp-input {
+    width: 35px; /* Adjust input size */
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .verify-btn {
+    font-size: 14px; /* Adjust button font size */
+    padding: 8px 16px; /* Adjust button padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .otp-card {
+    padding: 10px;
+  }
+
+  .icon-wrapper {
+    width: 50px;
+    height: 50px;
+  }
+
+  .shield-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  .email-placeholder {
+    font-size: 11px;
+  }
+
+  .otp-input {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .verify-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}

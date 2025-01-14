@@ -1,0 +1,79 @@
+.ClientPageDiv{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 5fr;
+    grid-template-columns: 1fr;
+   
+}
+.BandcBut{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.TeamMember{
+    height: 100%;
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ClientManagement{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 166, 111);
+}
+.BandcBut button{
+    height: 45px;
+    width: 100px;
+   
+    font-size: 16px;
+   
+}
+.ClientBut{
+    border-radius: 0px 10px 10px 0px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid;
+    color: #a386ff;
+    border-color: #a386ff;
+}
+.BusinessBut{
+    border-radius: 10px 0px 0px 10px;
+    margin-left: 2rem;
+    color: white;
+    background-color: #a386ff;
+}
+.TeamMemberButtons{
+    display: flex;
+    gap: 2rem;
+   
+}
+.AddBusiness{
+    height: 40px;
+    width: 120px;
+    background-color: #561F37;
+    margin-right: 3rem;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+.Filter{
+    height: 40px;
+    width: 120px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.TeamMemberText p{
+    font-size: 22px;
+    color: #453823;
+    margin-left: 2rem;
+}

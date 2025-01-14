@@ -1,0 +1,30 @@
+.RequestContainer {
+  height: 100%; /* Occupies full height of the parent container */
+  width: 100%; /* Occupies full width of the parent container */
+  display: grid;
+  grid-template-rows: auto 1fr; /* Header takes auto height, content takes remaining space */
+  grid-template-columns: 1fr;
+  overflow-y: hidden; /* Prevents outer container scrolling */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  box-sizing: border-box; /* Includes padding and borders in dimensions */
+}
+
+.RequestText {
+  width: 100%; /* Full width */
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 2rem; /* Add some padding around the text */
+}
+
+.Requests {
+  overflow-y: auto; /* Enables vertical scrolling for overflowing content */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  padding: 1rem; /* Adds space around the content */
+  display: flex;
+  flex-direction: column; /* Stacks child items vertically */
+  gap: 1rem; /* Adds space between request items */
+  background-color: #ffffff; /* Optional: Background for content */
+  max-height: 100vh; /* Ensures the content area grows to fill available space */
+}

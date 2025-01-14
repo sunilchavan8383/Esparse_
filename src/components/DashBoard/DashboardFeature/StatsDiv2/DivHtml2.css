@@ -1,0 +1,36 @@
+.html1OfDiv2,
+.html2OfDiv2,
+.html3OfDiv2 {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.options2,
+.options3 {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #8a4fff;
+  color: white;
+  margin-top: 1rem;
+}
+.options1 {
+  display: flex;
+}
+.options1,
+.options2,
+.options3,
+button {
+  border: 0px;
+  padding: 10px;
+}
+#Daily {
+  background-color: #8a4fff;
+  color: white;
+  border-radius: 10px 0 0 10px;
+}
+#Monthly {
+  border-radius: 0px 10px 10px 0px;
+}

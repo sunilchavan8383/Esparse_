@@ -1,0 +1,66 @@
+.LoginPage {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
+}
+
+.ImgFormContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  padding: 0 8%;
+}
+
+.LogoContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.Logo {
+  padding-left: 5%;
+  padding-top: 3%;
+}
+
+.LoginPageForm {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginPageImg img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .ImgFormContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 0 5%;
+  }
+
+  .LoginPageImg img {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ImgFormContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .LoginPageImg img {
+    max-width: 250px;
+  }
+}

@@ -1,0 +1,70 @@
+.DocumentManageDiv{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0.5fr 3fr;
+    padding: 15px;
+    
+    padding-right: 10px;
+}
+.DocManageBox{
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    height: 80%;
+    align-items: center;
+    width: 92%;
+    background-color: #EEEDED;
+    padding: 30px;
+    border-radius: 20px;
+    
+}
+.AllFiles{
+    height: 100%;
+    width: 100%;
+}
+.Memory{
+    display: flex;
+    flex-direction:row ;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 10px;
+
+}
+.MemoryCountText{
+    font-size: 30px;
+    color: #453823;
+    font-weight: 600;
+}
+.MemorybelowLine img{
+    width: 100%;
+}
+.BrownCircle,.PurpleCircle,.GreenCircle,.Brown2Circle{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+.BrownCircle{
+    background-color: #453823;
+}
+.PurpleCircle{
+   background-color: #8A4FFF;
+}
+.GreenCircle{
+   background-color: #7EBE2C;
+}
+.Brown2Circle{
+    background-color: #453823;
+
+}
+.dataDiscribe{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+.Describe1,.Describe2,.Describe3,.Describe4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}

@@ -1,0 +1,38 @@
+.verifyDiv {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img1 img {
+  width: 90%;
+  max-width: 500px; /* Limit maximum width for large screens */
+}
+
+.img2 img {
+  width: 90%;
+  max-width: 500px; /* Limit maximum width for large screens */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .verifyDiv {
+    flex-direction: column; /* Stack elements vertically */
+    
+  }
+
+  .img1 img,
+  .img2 img {
+    width: 100%; /* Reduce width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .img1 img,
+  .img2 img {
+    width: 100%; /* Further reduce width for mobile devices */
+   
+  }
+}

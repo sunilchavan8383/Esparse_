@@ -1,0 +1,132 @@
+.QuotationDiv{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 5fr;
+    grid-template-columns: 1fr;
+   
+}
+.QandIBut{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+
+}
+.Quotation{
+    height: 100%;
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.QuotationManagement{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.InvoiceBut{
+    border-radius: 0px 10px 10px 0px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid;
+    color: #a386ff;
+    text-decoration: none;
+    border-color: #a386ff;
+    height: 45px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+.QuotationBut{
+    border-radius: 10px 0px 0px 10px;
+    margin-left: 2rem;
+    color: white;
+    background-color: #a386ff;
+    text-decoration: none;
+    height: 45px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    font-size: 16px;
+}
+.QuotationButtons{
+    display: flex;
+    gap: 2rem;
+    
+   
+}
+.Quotationcreate{
+    height: 40px;
+    width: 120px;
+    background-color: #561F37;
+    margin-right: 3rem;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+.QuotationFilter{
+    height: 40px;
+    width: 120px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.QuotationCToInvoice{
+    height: 40px;
+    width: 160px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+.QuotationText p{
+    font-size: 22px;
+    color: #453823;
+    margin-left: 2rem;
+}
+.TotalQuotation,.PendingQuotation,.AcceptedQuotation{
+    height: 100%;
+    width: 25%;
+    border-radius: 10px;
+    border: 2px solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+
+}
+.TotalQuotation{
+    border-color: #453823;
+
+}
+.PendingQuotation{
+    border-color: #E54646;
+
+}
+.AcceptedQuotation{
+    border-color: #7EBE2C;
+
+}
+.QuotationInfo{
+    display: flex;
+    flex-direction: row;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}

@@ -1,0 +1,60 @@
+.ReportDiv{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 4fr 4fr;
+    grid-template-columns: 1fr;
+    background-color: #F5F7F9;
+
+
+}
+.OverviewAndCalender{
+    display: grid;
+    grid-template-columns: 0.7fr 3fr;
+    grid-template-rows: 1fr;
+    padding: 30px;
+    gap:2rem;
+
+}
+.ReportOverview{
+    display: grid;
+    grid-template-rows: 0.4fr 1fr 1fr;
+    grid-template-columns: 1fr;
+   background-color: white;
+    border-radius: 20px;
+    align-items: center;
+   padding: 5px;
+}
+.ReportOverviewText{
+    text-align: center;
+}
+.Calender{
+    background-color: aqua;
+    border-radius: 20px;
+}
+.ReportOverviewText{
+    font-size: 20px;
+    color: #453823;
+}
+.gst{
+    font-size: 18px;
+    color: #453823;
+    font-weight: 600;
+}
+.tax{
+    font-size: 18px;
+    color: #453823;
+    font-weight: 600;
+}
+.GSTFilling{
+    padding: 20px;
+}
+.TaxFilling{
+    padding: 20px;
+}
+.gstcomplete,.taxcomplete{
+    color: #7EBE2C;
+}
+.gstincomplete,.taxincomplete{
+    color: #E54646;
+}
