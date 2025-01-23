@@ -1,0 +1,53 @@
+.SettingDiv {
+    width: 100%;
+    padding: 0px 15px 15px 30px;
+    align-items: center;
+   
+  
+  padding-left: 3rem;
+background-color: #F5F7F9;
+    display: grid;
+    grid-template-rows: 1fr 1fr 7fr;
+  }
+  
+  .SettingText {
+    text-align: left;
+    
+ 
+  }
+  
+  .Setting {
+    
+    font-weight: bold;
+    color: #453823;
+    font-size: 18px;
+  }
+  
+  /* Tabs Section */
+  .ppslButs {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+  .ppslButs1{
+    border-radius: 5px 0px 0px 5px;
+  }
+  .ppslButs4{
+    border-radius: 0px 5px 5px 0px;
+  }
+  .ppslButs a {
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px solid #a386ff;
+    color: #a386ff;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .ppslButs a.active, .ppslButs a:hover {
+    background-color: #8A4FFF;
+    color: white;
+  }

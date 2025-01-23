@@ -1,0 +1,14 @@
+.quote-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    gap: 1rem;
+    border-bottom: 1px solid #A7A7A7;
+}
+.quote-header{
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+    align-items: center;
+}

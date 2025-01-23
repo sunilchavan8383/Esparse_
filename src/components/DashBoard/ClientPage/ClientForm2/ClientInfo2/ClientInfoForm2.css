@@ -1,0 +1,21 @@
+.client-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    gap: 1rem;
+    border-bottom: 1px solid #A7A7A7;
+    align-items: center;
+}
+.client-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+}
+.view-profile-btn{
+    border-radius: 10px;
+    border-color: #8a4fff;
+    color: #8a4fff;
+    background-color: white;
+}

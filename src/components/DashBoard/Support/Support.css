@@ -1,0 +1,26 @@
+.SupportDiv{
+    display: grid;
+    grid-template-rows: 0.5fr 6fr;
+    height: 100%;
+}
+.chatsandcontainer{
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    padding: 2rem;
+    padding-top: 0px;
+    gap: 2rem;
+}
+.chatscontainer{
+    background-color: bisque;
+     border-radius: 25px;
+
+}
+.chats{
+  
+}
+.SupportText{
+    padding-left: 2rem;
+  padding-bottom: 1rem;
+    font-size: 20px;
+    font-weight: 600;
+}

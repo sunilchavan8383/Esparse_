@@ -29,7 +29,7 @@
     text-align: center;
 }
 .Calender{
-    background-color: aqua;
+    background-color: white;
     border-radius: 20px;
 }
 .ReportOverviewText{
@@ -57,4 +57,28 @@
 }
 .gstincomplete,.taxincomplete{
     color: #E54646;
+}
+.ReportInfo{
+    border-radius: 20px;
+    background-color: white;
+    height: 80%;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    margin-left: 2rem;
+    width: 90%;
+    padding: 20px 20px 20px 20px;
+}
+.ReportHeaders{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    gap: 1rem;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 2rem;
+}
+.ReportManage{
+    padding-left: 2rem;
+   
 }

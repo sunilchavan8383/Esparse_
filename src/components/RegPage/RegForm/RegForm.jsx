@@ -7,11 +7,18 @@ const CreateAccount = () => {
       <h1 className="hero">Create Account</h1>
       <p className="hero">Share Your Basic Information for Account Creation</p>
       <form>
-        <div className="form-group">
-          <label>Register as</label>
+        <div className="form-group1">
+          <div>
+        <label>Register as</label>
+        </div>
+        <div className='Sell'>
           <select id="Sel">
-            <option>Select</option>
+          <option>Select</option>
+            <option>Personal</option>
+            <option>Business</option>
+            <option>Tax Consultant</option>
           </select>
+          </div>
         </div>
 
         <div className="form-row">
@@ -34,8 +41,9 @@ const CreateAccount = () => {
           <input type="email" placeholder="Email*" required />
           <input type="tel" placeholder="Phone Number*" required />
         </div>
-
+        <div className="form-row">
         <input type="text" placeholder="Office Address" />
+        </div>
         <div className="form-row">
           <input type="text" placeholder="City*" required />
           <select>
@@ -46,17 +54,23 @@ const CreateAccount = () => {
         <div className="form-row">
           <select>
             <option>Specialisation*</option>
+            <option>GST Filling</option>
+            <option>Income Tax Filling</option>
+            <option>GST and IT</option>
+            <option>Corporate Tax</option>
           </select>
           <input type="text" placeholder="ICAI Membership Number*" required />
         </div>
-
+        <div className="form-row">
         <input type="text" placeholder="PAN Card Number*" required />
+        </div>
+        
         <div className="form-row">
           <input type="password" placeholder="Password*" required />
           <input type="password" placeholder="Confirm Password*" required />
         </div>
 
-        <div className="form-group">
+        <div className="form-group3">
           <input type="checkbox" id="terms" required />
           <label htmlFor="terms">
             I agree to the <a href="/">Terms Of Services</a> and{" "}
@@ -64,7 +78,7 @@ const CreateAccount = () => {
           </label>
         </div>
         <Link to="/verification" className="submit-btn">Submit</Link>
-        <p>
+        <p id='log'>
           Already have an account? <a href="/">Login</a>
         </p>
       </form>

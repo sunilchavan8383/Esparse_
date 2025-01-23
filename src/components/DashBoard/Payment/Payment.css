@@ -2,7 +2,7 @@
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-rows: 1fr 1fr 5fr;
+    grid-template-rows: 1fr 1fr 1.5fr 1fr auto;
     grid-template-columns: 1fr;
    
 }
@@ -59,6 +59,7 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
+    padding-top: 1.5rem;
 }
 .PaymentOverview{
     display: flex;
@@ -74,4 +75,46 @@
 }
 .History{
     color: #453823;
+}
+.recentPay{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+
+}
+.recentPayButs{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.Quotationcreate1{
+    height: 40px;
+
+    background-color: #561F37;
+    margin-right: 3rem;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.recentPayText{
+    color: #453823;
+    font-size: 20px;
+    font-weight: 600;
+}
+.PayHeaders{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    gap: 1rem;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 2rem;
 }

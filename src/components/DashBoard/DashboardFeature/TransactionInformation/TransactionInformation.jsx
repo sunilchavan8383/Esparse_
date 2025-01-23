@@ -5,6 +5,13 @@ import "./TransactionInformation.css";
 function TransactionInformation() {
   return (
     <div className="transInfo">
+                <div className="TransactionInfo">
+            <p>Name</p>
+            <p>Date</p>
+            <p>Time</p>
+            <p>Amount</p>
+            <p>Status</p>
+          </div>
       {transInfo.map((transaction, index) => (
         <div key={index} className="transaction">
           <div className="translgname">
@@ -16,6 +23,7 @@ function TransactionInformation() {
           <p>{transaction[3]}</p> {/* Amount */}
           <p>{transaction[4]}</p> {/* Status */}
         </div>
+       
       ))}
     </div>
   );

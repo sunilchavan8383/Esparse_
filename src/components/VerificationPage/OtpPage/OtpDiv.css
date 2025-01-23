@@ -85,6 +85,7 @@ h3 {
 .verify-btn:hover {
   font-family: "Poppins", sans-serif;
   background-color: #684cd4;
+  text-decoration: none;
 }
 
 /* Responsive Design */

@@ -1,0 +1,40 @@
+/* Container for the toggle switch */
+.toggle-switch {
+    width: 50px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Circle inside the toggle */
+  .toggle-circle {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  /* When toggle is ON */
+  .toggle-switch.on {
+    background-color: #7c4dff;
+  }
+  
+  .toggle-switch.on .toggle-circle {
+    transform: translateX(33px);
+  }
+  
+  /* When toggle is OFF */
+  .toggle-switch.off {
+    background-color: #aaa;
+  }
+  
+  .toggle-switch.off .toggle-circle {
+    transform: translateX(0);
+  }
+  

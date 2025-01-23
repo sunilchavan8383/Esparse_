@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./InvoicePage.css";
 import TotalQuotationImg from '../images/TotalQuotation.svg'
 import PendingQ from '../images/PendingQuotations.svg';
 import AcceptQ from '../images/AcceptedQ.svg'
+import InvoiceForm from "./InvoiceForm/InvoiceForm";
 import { Link } from "react-router-dom";
 function InvoiceManage() {
+  const [isOpen, setIsOpen] = useState(false);
+    
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
   return ( 
     <div className="InvoiceManageDiv">
       <div className='InvoiceInfo'>
@@ -42,13 +48,29 @@ function InvoiceManage() {
         <p>Invoice</p>
         </div>
         <div className='InvoiceButtons'>
-        <div className='InvoiceFilter'>Filter</div>
+        <div className="filter-container">
+      <div className="filter-button" onClick={toggleDropdown}>
+        <span className="filter-icon">⚙️</span> Filters ▼
+      </div>
+      {isOpen && (
+        <div className="filter-dropdown">
+       <div className="filter-item">Paid</div>
+          <div className="filter-item">Unpaid</div>
+          <div className="filter-item">Sale</div>
+          <div className="filter-item">Purchase</div>
+          
+          
+        </div>
+      )}
+    </div>
         <div className='InvoiceCToQ'>Scan Invoice</div>
         <div className='InvoiceCToQ'>Upload Invoice</div>
         <div className='Invoicecreate'>Create</div>
         </div>
       </div>
-      <div className="InvoiceManagement"></div>
+      <div className="InvoiceManagement">
+        <InvoiceForm/>
+      </div>
     </div>
   );
 }

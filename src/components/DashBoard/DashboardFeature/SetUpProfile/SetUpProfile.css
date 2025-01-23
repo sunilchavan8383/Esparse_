@@ -1,0 +1,178 @@
+.ProfileBack {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9d9d996;
+  position: absolute;
+  top: 0;
+  left: -100%; /* Start off-screen */
+  transition: left 0.5s ease; /* Smooth animation */
+}
+
+.ProfileBack.toCenter {
+  left: 0; /* Slide to center */
+}
+
+.ProfileBack.slideLeft {
+  left: -100%; /* Slide back to off-screen */
+}
+
+
+.ProfileDiv {
+  height: 80%;
+  width: 100%;
+  max-width: 400px; /* Limits the maximum width */
+  background-color: white;
+  padding: 25px;
+  border-radius: 20px;
+  margin-left: 15rem;
+  display: grid;
+  grid-template-rows: 1fr 2fr 4fr 0.5fr 0.5fr;
+  grid-template-columns: 1fr;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Hero {
+  font-size: 1.5rem; /* Scales font size */
+  line-height: 2rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.Photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto; /* Centers the photo */
+}
+
+#RoundPhoto {
+  width: 100%;
+}
+
+.ProfileInfo {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px; /* Adds spacing between items */
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Lable li {
+  font-size: 1rem;
+  padding: 8px 0;
+  margin-bottom: 0.4rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+}
+
+.inputs li {
+  margin-bottom: 0.5rem;
+}
+
+.inputs input {
+  padding: 8px 10px;
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid #8a4fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.UploadBut {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1px solid #8a4fff;
+  background-color: white;
+  border-radius: 10px;
+  margin: 0 auto; /* Centers the upload button */
+  padding: 8px 16px;
+  width: fit-content;
+  text-align: left;
+  
+}
+
+.SaveBut {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.SaveBut button {
+  background-color: #8a4fff;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.SaveBut button:hover {
+  background-color: #7b3be6;
+}
+
+@media (max-width: 768px) {
+  .ProfileDiv {
+    height: auto;
+    padding: 20px;
+  }
+
+  .Hero {
+    font-size: 1.2rem;
+  }
+
+  .Photo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .Lable li, 
+  .inputs input {
+    font-size: 0.9rem;
+  }
+
+  .SaveBut button {
+    width: 50%;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ProfileDiv {
+    padding: 15px;
+  }
+
+  .Hero {
+    font-size: 1rem;
+  }
+
+  .Photo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .Lable li,
+  .inputs input {
+    font-size: 0.8rem;
+  }
+
+  .SaveBut button {
+    width: 70%;
+  }
+}

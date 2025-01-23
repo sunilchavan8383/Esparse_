@@ -4,6 +4,8 @@
     display: grid;
     grid-template-rows: 0.5fr 0.5fr 5fr;
     grid-template-columns: 1fr;
+    overflow-x: hidden;
+   
    
 }
 .BandcBut{
@@ -24,27 +26,44 @@
 .ClientManagement{
     height: 100%;
     width: 100%;
-    background-color: rgb(0, 166, 111);
+ 
 }
-.BandcBut button{
-    height: 45px;
-    width: 100px;
+.BandcBut {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
    
-    font-size: 16px;
    
 }
 .ClientBut{
+
     border-radius: 0px 10px 10px 0px;
-    background-color: rgb(255, 255, 255);
+ 
     border: 1px solid;
-    color: #a386ff;
+
+    text-decoration: none;
     border-color: #a386ff;
+    height: 45px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
 }
 .BusinessBut{
     border-radius: 10px 0px 0px 10px;
     margin-left: 2rem;
-    color: white;
-    background-color: #a386ff;
+    border: 1px solid;
+    border-color: #a386ff;
+    text-decoration: none;
+    height: 45px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    font-size: 16px;
 }
 .TeamMemberButtons{
     display: flex;
@@ -66,7 +85,7 @@
 .Filter{
     height: 40px;
     width: 120px;
-    background-color: bisque;
+   border: 1px solid #858585;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,3 +96,56 @@
     color: #453823;
     margin-left: 2rem;
 }
+.filter-container {
+    position: relative;
+    display: inline-block;
+    color: #858585;
+  }
+  .filter-container:hover{
+    background-color: #858585;
+    color: white;
+    border-radius:5px ;
+  }
+  
+  .filter-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  .filter-icon {
+    margin-right: 5px;
+  }
+  
+  .filter-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    min-width: 150px;
+  }
+  
+  .filter-item {
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  .filter-item:hover {
+    background-color: #f5f5f5;
+  }
+  

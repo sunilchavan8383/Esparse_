@@ -2,13 +2,13 @@
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-rows: 1fr 5fr;
+  grid-template-rows: 0.4fr 5fr;
   grid-template-columns: 1fr;
 }
 
 .ImgFormContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.2fr 1fr;
   grid-template-rows: 1fr;
   justify-content: center;
   gap: 10%;
@@ -16,7 +16,7 @@
 
 .LogoContainer {
   width: 100%;
-  height: 100px;
+  height:90px;
 }
 
 .Logo {

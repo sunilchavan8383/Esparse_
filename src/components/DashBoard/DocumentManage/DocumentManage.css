@@ -2,10 +2,10 @@
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-rows: 0.5fr 3fr;
-    padding: 15px;
-    
-    padding-right: 10px;
+    grid-template-rows: 0.5fr 0.4fr auto;
+    overflow-x: hidden;
+  margin-left: 2rem;
+
 }
 .DocManageBox{
     display: grid;
@@ -15,12 +15,22 @@
     width: 92%;
     background-color: #EEEDED;
     padding: 30px;
+    
+    padding-left: 2rem;
     border-radius: 20px;
     
 }
 .AllFiles{
     height: 100%;
     width: 100%;
+    padding-top: 50px;
+    
+}
+.AllFilesText{
+    font-size: 18px;
+    color: #453823;
+    padding-bottom: 1rem;
+    font-weight: 600;
 }
 .Memory{
     display: flex;
@@ -67,4 +77,28 @@
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
+}
+.FilesOpt{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    background-color: #EEEDED;
+    width: fit-content;
+    border-radius: 10px;
+}
+.FilesOpt a{
+    padding: 8px;
+    color: black;
+}
+.filterandbuissness{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.ButConatiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
 }

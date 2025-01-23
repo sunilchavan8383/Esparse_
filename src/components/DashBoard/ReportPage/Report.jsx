@@ -1,5 +1,6 @@
 import React from 'react';
 import './Report.css';
+import ReportInfoForm from './ReportForm/ReportInfo';
 function Report(){
     return(
       <div className='ReportDiv'>
@@ -19,7 +20,20 @@ function Report(){
         </div>
         <div className='Calender'></div>
         </div>
-        <div className='ReportInfo'></div>
+        <div className='ReportInfo'>
+          <div className='ReportHeaders'>
+          <p>Payment ID</p>
+            <p>Name</p>
+            <p>Total Filed</p>
+            <p>Pending</p>
+            <p>Due Date</p>
+            <p>Status</p>
+           
+          </div>
+          <div className='ReportManage'>
+            <ReportInfoForm/>
+          </div>
+        </div>
       </div>
     );
 }

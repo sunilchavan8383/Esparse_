@@ -25,7 +25,7 @@
 .QuotationManagement{
     height: 100%;
     width: 100%;
-    
+    padding-left: 2rem;
 }
 
 .InvoiceBut{
@@ -86,11 +86,14 @@
 .QuotationCToInvoice{
     height: 40px;
     width: 160px;
-    background-color: bisque;
+    
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    background-color: white;
+    color: #561F37;
+    border: 1px solid #561F37;
 
 }
 .QuotationText p{
@@ -99,7 +102,7 @@
     margin-left: 2rem;
 }
 .TotalQuotation,.PendingQuotation,.AcceptedQuotation{
-    height: 100%;
+    height: 70%;
     width: 25%;
     border-radius: 10px;
     border: 2px solid;

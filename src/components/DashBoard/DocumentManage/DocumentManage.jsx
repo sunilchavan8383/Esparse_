@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+import { Outlet, Link } from "react-router-dom";
 import './DocumentManage.css';
 import Line from './Images/Line.svg';
 import MemImg from './Images/MemImg.svg'
 function DocumentManage(){
+      const [isOpen, setIsOpen] = useState(false);
+    
+      const toggleDropdown = () => {
+        setIsOpen(!isOpen);
+      };
     return(
         <div className='DocumentManageDiv'>
             <div className='DocManageBox'>
@@ -36,7 +42,37 @@ function DocumentManage(){
                     </div>
                 </div>
             </div>
-            <div className='AllFiles'></div>
+            <div className='AllFiles'>
+                <div className='AllFilesText'>All Files</div>
+                  <div className='ButConatiner'>
+                <div className='FilesOpt'>
+                  <Link to='all-documents' >View All</Link>
+                  <Link >Documents</Link>
+                  <Link >Media Files </Link>
+                  <Link >Pdfs</Link>
+                </div>
+               
+                    <div className='filterandbuissness'>
+                    <div className="filter-container">
+      <div className="filter-button" onClick={toggleDropdown}>
+        <span className="filter-icon">⚙️</span> Filters ▼
+      </div>
+      {isOpen && (
+        <div className="filter-dropdown">
+          <div className="filter-item">Documents</div>
+          <div className="filter-item">Media Files</div>
+          <div className="filter-item">Pdfs</div>
+          
+        </div>
+      )}
+    </div>
+        <div className='AddBusiness'>Export</div>
+        </div>
+            </div>
+            </div>
+            <div className='DocumentForm'>
+                <Outlet/>
+            </div>
         </div>
     );
 }
