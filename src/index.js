@@ -28,6 +28,26 @@ import AuthSettings from './components/DashBoard/Setting/SettingOptions/Security
 import LogoutModal from './components/DashBoard/Setting/SettingOptions/LogOut/LogOut';
 import Support from './components/DashBoard/Support/Support';
 import ClientModal from './components/DashBoard/ClientPage/ClientModal/ClientModal';
+
+
+
+//Customer Portal
+
+import CustDash from './customerPortal/CustDashboard/CustDashBoard';
+import CustomerDashboard from './customerPortal/CustDashboard/CostumerDashboard/CustumerDashboard';
+import TaxFilling1 from './customerPortal/CustDashboard/IncomeTaxFilling/TaxFilling1/TaxFilling1';
+import IncomeTaxFilling from './customerPortal/CustDashboard/IncomeTaxFilling/IncomeTaxFilling';
+import TaxConsultant from './customerPortal/CustDashboard/TaxConsultant/TaxConsultant';
+import FilesTable from './customerPortal/CustDashboard/CustomerDocument/CustomerDocument';
+import CustomerSupport from './customerPortal/CustDashboard/CustomerSupport/CustomerSupport';
+import FAQAccordion from './customerPortal/CustDashboard/Faq/Faq';
+import UserSettings from './customerPortal/CustDashboard/Setting/CustSettings';
+import ProfileSettings from './customerPortal/CustDashboard/Setting/CustSettingOptions/CustMyProfile/CustMyProfile';
+import UserPreferences from './customerPortal/CustDashboard/Setting/CustSettingOptions/Preferences/CustPreferences';
+import IncomeForm from './customerPortal/CustDashboard/IncomeTaxFilling/TaxFilling2/TaxFilling2';
+import TaxDetailsForm from './customerPortal/CustDashboard/IncomeTaxFilling/TaxFilling3/TaxFilling3';
+import TaxFilling4 from './customerPortal/CustDashboard/IncomeTaxFilling/TaxFilling4/TaxFilling4';
+import CAProfile from './customerPortal/CustDashboard/TaxConsultant/ConsultatntProfile/CostumerProfile/CustmerProfile';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -54,7 +74,7 @@ const router = createBrowserRouter([
     element: <DashBoard />,
     children: [
       { path: "dashboard", element: <Dashboardfeature /> },
-      { path: "pending-aprovals", element: <Requests /> },
+      { path: "pending-approvals", element: <Requests /> },
       { path: "client-management", element: <ClientPage />, 
         children:[
           {index: true, element:<ClientForm/>},
@@ -94,6 +114,41 @@ const router = createBrowserRouter([
       },
     ],
   },
+
+  {
+    path: "/customer-dashboard",
+    element:<CustDash />,
+    children: [
+      {index: true, element:<CustomerDashboard  />},
+      { path: "customer-dashboard", element: <CustomerDashboard  /> },
+      { path: "income-tax-filling", element: <IncomeTaxFilling/>,
+        children: [
+          {index: true, element:<TaxFilling1/>},
+          {path: "basic-details", element: <TaxFilling1/>},
+          {path: "income-details", element: <IncomeForm/>},
+          {path: "deductions", element: <TaxDetailsForm/>},
+          {path: "summary", element: <TaxFilling4/>}
+        ],
+       },
+      { path: "tax-consultant", element: <TaxConsultant/>,
+        children: [
+          {path: "customer-profile", element: <CAProfile/>},
+        ],
+       }, 
+      { path: "customer-documents", element: <FilesTable/> },
+      { path: "customer-support", element: <CustomerSupport/> },
+      { path: "FAQ", element: <FAQAccordion/> },
+      { path: "customer-setting", element: <UserSettings/> ,
+        children:[
+          {index: true, element:<ProfileSettings /> },
+          { path: "profile", element: <ProfileSettings /> },
+          { path: "preferences", element: <UserPreferences/> },
+          { path: "customer-security", element: <AuthSettings/> },
+          { path: "customer-logout", element: <LogoutModal/> },
+        ],
+      }
+    ],
+  }
 ]);
 
 
@@ -110,3 +165,6 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+
+

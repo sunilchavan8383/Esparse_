@@ -1,0 +1,42 @@
+.TaxFilling1-container{
+    height: 100%;
+    width: 100%;
+}
+.selectYearText1{
+    color: #453823;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .latestBudget{
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+  .latestBudgetText{
+  color: #545454;
+  font-size: 18px;
+  }
+  .Latest-Budget{
+    height: 100%;
+    color: white;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #561F37;
+   
+  }
+  .latestBudget2{
+    display: flex;
+    gap: 1rem;
+  }
+  .latestBudget2Text{
+    color: #545454;
+    font-size: 18px;
+  }
+  .SelectAge1,.SelectAge2,.SelectAge3,.SelectAge4,.SelectAge5{
+    display: flex;
+    gap: 1rem;
+  }
+  .selectYearText1{
+    padding-bottom: 1rem;
+  }

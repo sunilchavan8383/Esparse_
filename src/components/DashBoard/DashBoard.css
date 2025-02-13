@@ -26,12 +26,12 @@
   }
   
   .toolscontainer {
-    padding-top: 2rem; /* Add spacing at the top */
+    padding: 25px 20px 25px 25px;/* Add spacing at the top */
     background-color: #8a4fff; /* Background color */
     color: white; /* Text color */
     font-size: 16px; /* Font size */
     line-height: 30px; /* Line height for readability */
-    gap: 3%; /* Spacing between elements */
+    gap: 1.5%; /* Spacing between elements */
     display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Stack items vertically */
     align-items: stretch; /* Stretch items to fit container width */
@@ -41,6 +41,7 @@
     max-height: 100%; /* Prevent growth beyond parent container height */
     box-sizing: border-box; /* Include padding and borders in the element's dimensions */
     flex-shrink: 0; /* Prevent shrinking */
+    overflow-x: hidden;
   }
   
   .Notcontainer {
@@ -53,21 +54,36 @@
   .t1 {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    margin-left: 2rem;
-    text-align: left;
-    height: 35px;
-
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
+  
+  .t1.active {
+    background-color: white;
+    width: 100%;
+
+    border-radius: 10px 0px 0px 10px; /* Optional for rounded corners */
+  }
+  
+  .t1 img {
+    margin-right: 10px;
+  }
+  
+  .t1 a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .t1.active a{
+    color: black;
+  }
+  
   #Dashboard{
     background-color: white;
     color: #8a4fff;
     border-radius: 10px 0px 0px 10px;
   }
-  .t1 a{
-    color: white;
-    text-decoration: none;
-  }
+
   .t11 a{
     color: white;
     text-decoration: none;
@@ -163,4 +179,5 @@
       padding-top: 0.5rem; /* Reduce padding */
     }
   }
-  
+
+

@@ -1,0 +1,73 @@
+.dashboard-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 0.5fr 0.2fr 1.5fr;
+  grid-template-columns: 1fr;
+}
+
+.greeting-section {
+  background-color: #F5F7F9;
+  border-radius: 20px;
+  margin: 0 2rem 1rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 0.1fr;
+  gap: 5px;
+  align-items: center;
+}
+
+.greeting-text {
+  display: grid;
+  grid-template-rows: 1fr 0.2fr 0.2fr;
+  gap: 5px;
+  align-items: center;
+  padding: 20px;
+}
+
+.greeting-primary {
+  color: #8A4FFF;
+  font-size: 25px;
+}
+
+.greeting-secondary {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.greeting-date {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.greeting-image img {
+  max-height: 150px;
+  padding: 0px 30px 0px 10px;
+}
+
+.IncomeTaxCalculator{
+  display: grid;
+  grid-template-rows: 0.2fr 0.1fr 0.2fr auto;
+  padding-left: 2rem;
+  height: auto;
+  gap: 1rem;
+}
+.IncomeTaxCalculatorText1{
+  font-size: 24px;
+  color: #453823;
+  font-weight: 600;
+ 
+}
+.IncomeTaxCalculatorText2{
+  font-size: 18px;
+  color: #453823;
+  font-weight: 500;
+}
+.stepsText{
+   color: #858585;
+   font-size: 18px;
+}
+.tax-filling{
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+}

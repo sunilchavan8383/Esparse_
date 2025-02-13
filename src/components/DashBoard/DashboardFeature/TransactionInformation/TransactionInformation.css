@@ -7,3 +7,9 @@
   align-items: center;
   width: 100%;
 }
+.TransactionInfo{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  gap: 4rem;
+}

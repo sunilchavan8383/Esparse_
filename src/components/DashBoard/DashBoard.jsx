@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import Logo from "../Logo/Logo";
 import "./DashBoard.css";
@@ -16,6 +16,21 @@ import tool9 from "./AdminImg/tool9.svg";
 import tool10 from "./AdminImg/tool10.svg";
 
 function AdminDash() {
+  const [active, setActive] = useState("dashboard"); // Default active item
+
+  const menuItems = [
+    { name: "dashboard", label: "Dashboard", icon: tool1 },
+    { name: "client-management", label: "Client Management", icon: tool2 },
+    { name: "document-management", label: "Document Management", icon: tool3 },
+    { name: "gst-filing", label: "GST Filing", icon: tool4 },
+    { name: "quotation-invoice", label: "Quotation & Invoice", icon: tool5 },
+    { name: "payment", label: "Payment", icon: tool6 },
+    { name: "report", label: "Report", icon: tool7 },
+    { name: "support", label: "Support", icon: tool8 },
+    { name: "settings", label: "Setting", icon: tool9 },
+    { name: "/", label: "Log Out", icon: tool10 },
+  ];
+
   return (
     <div className="adminContainer">
       <div className="LgContainer">
@@ -33,46 +48,20 @@ function AdminDash() {
       </div>
       <div className="tools">
         <div className="toolscontainer">
-          <div className="t1">
-            <img src={tool1} alt="" />
-            <Link to="dashboard">Dashboard</Link>
-          </div>
-          <div className="t1">
-            <img src={tool2} alt="" />
-            <Link to="client-management">Client Management</Link>
-          </div>
-          <div className="t1">
-            <img src={tool3} alt="" />
-            <Link to="document-management">Document Management</Link>
-          </div>
-          <div className="t1">
-            <img src={tool4} alt="" />
-            <Link to="gst-filing">GST Filing</Link>
-          </div>
-          <div className="t1">
-            <img src={tool5} alt="" />
-            <Link to="quotation-invoice">Quotation & Invoice</Link>
-          </div>
-          <div className="t1">
-            <img src={tool6} alt="" />
-            <Link to="payment">Payment</Link>
-          </div>
-          <div className="t1">
-            <img src={tool7} alt="" />
-            <Link to="report">Report</Link>
-          </div>
-          <div className="t1">
-            <img src={tool8} alt="" />
-            <Link to="support">Support</Link>
-          </div>
-          <div className="t1">
-            <img src={tool9} alt="" />
-            <Link to="settings">Setting</Link>
-          </div>
-          <div className="t11">
-            <img src={tool10} alt="" />
-            <Link to="/">Log Out</Link>
-          </div>
+          {menuItems.map((item) => (
+            <div
+              key={item.name}
+              className={`t1 ${active === item.name ? "active" : ""}`}
+              onClick={() => setActive(item.name)}
+            >
+              <img
+                src={item.icon}
+                alt=""
+                className={`menu-icon ${active === item.name ? "active-icon" : ""}`}
+              />
+              <Link to={item.name}>{item.label}</Link>
+            </div>
+          ))}
         </div>
         <div className="features">
           <Outlet />

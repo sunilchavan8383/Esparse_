@@ -1,0 +1,168 @@
+.DashBoardFeatureCon {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 0.5fr 0.2fr 1.5fr;
+    grid-template-columns: 1fr;
+   
+  }
+  .greet {
+    background-color: #F5F7F9;
+    border-radius: 20px;
+    display: grid;
+    padding: 20px;
+    grid-template-rows: 1fr 0.2fr 0.2fr;
+    gap: 5px;
+    align-items: center;
+  }
+  .greetContainer{
+    background-color: #F5F7F9;
+    border-radius: 20px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 0.1fr;
+    margin-bottom: 1rem;
+    gap: 5px;
+    align-items: center;
+  }
+  .greetImg img{
+    max-height: 120px;
+    padding: 0px 30px 0px 10px;
+  }
+  #greet1{
+    color: #8A4FFF;
+    font-size: 25px;
+  }
+
+  #greet2{
+    font-size: 16px;
+    font-weight: 400;
+  }
+  #greet3{
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .PendingApproval a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .stats1 {
+    width: 92%;
+  display: flex;
+  background-color: #F5F7F9;
+
+  margin-left: 2rem;
+  padding-left: 0px;
+  flex-direction: column;
+  }
+  .htmlOfDivs{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 20px;
+    justify-content: space-between;
+    
+  }
+  .stats3    {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  
+    padding: 1rem;
+  }
+  .Tax-Summary{
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 20px;
+    color: #453823;
+  }
+
+  
+  
+  .Paymentandimg,.Gstandimg,.Revenueandimg,.usersandimg{
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+    align-items: center;
+    
+     gap: 10%;
+     width: 100%;
+     text-align: left;
+    }
+    .htmlOfDiv2,.htmlOfDiv3,.htmlOfDiv4{
+      border: 3.5px solid;
+      max-width: 180px;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+     padding: 25px 20px 20px 25px;
+      height: 100%;
+      max-height: 100px;
+      border-radius: 15px;
+      border-color: #8a4fff;
+    }
+    .htmlOfDiv1{
+      border: 3.5px solid;
+      max-width: 180px;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+     padding: 25px 20px 20px 25px;
+      height: 100%;
+      max-height: 100px;
+      border-radius: 15px;
+      border-color: #8a4fff;
+    }
+
+    .GstLabel,.RevenueLabel,.Users,.PaymentLabel{
+      font-size: 22px;
+      font-weight: 600;
+    }
+    .htmlOfDiv2{
+      border-color: #8a4fff;
+    }
+    .htmlOfDiv3{
+      border-color: #8A4FFF;
+    }
+    .htmlOfDiv4{
+      border-color: #8A4FFF;
+      margin-right: 3rem;
+    }
+    .htmlOfDiv1:hover, 
+    .htmlOfDiv1:hover * {
+        color: white;
+       
+      background-color: #8a4fff;
+    }
+    .htmlOfDiv2:hover, 
+    .htmlOfDiv2:hover * {
+      color: white;
+      
+      background-color: #8a4fff;
+    }
+    .htmlOfDiv3:hover, 
+    .htmlOfDiv3:hover * {
+        color: white;
+        background-color: #8a4fff;
+    }
+    .htmlOfDiv4:hover, 
+    .htmlOfDiv4:hover * {
+        color: white;
+        background-color: #8a4fff;
+     
+  
+    }
+  .Users{
+    padding-right: 2rem;
+  }
+  .usersandimg{
+    padding-top: 10px;
+  }

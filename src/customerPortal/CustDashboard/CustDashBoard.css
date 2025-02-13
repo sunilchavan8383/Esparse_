@@ -1,0 +1,134 @@
+.dashboard-container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 0.3fr 5fr;
+}
+
+.header-container {
+  display: flex;
+  max-height: 80px;
+  width: 100%;
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-container {
+  height: calc(100vh - 80px);
+  display: grid;
+  grid-template-columns: 1.5fr 5fr;
+}
+
+.sidebar-container {
+  padding: 25px 20px;
+  background-color: #8a4fff;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5%;
+  overflow-y: auto;
+}
+
+.notification-container {
+  display: flex;
+  gap: 1rem;
+  padding-right: 2rem;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-item.active-item {
+  background-color: white;
+  border-radius: 10px 0 0 10px;
+}
+
+.sidebar-item img {
+  margin-right: 10px;
+}
+
+.sidebar-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sidebar-item.active-item a {
+  color: black;
+}
+
+.search-container input {
+  border-radius: 20px;
+  border: none;
+  background-color: #f0ebff;
+  padding: 10px 15px;
+  width: 300px;
+}
+
+.search-container input::placeholder {
+  font-size: 14px;
+  color: #8a4fff;
+}
+
+.report-button {
+  background-color: #453823;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.main-content {
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar-container {
+    max-height: calc(100vh - 120px);
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-container input {
+    width: 100%;
+  }
+
+  .notification-container {
+    padding-right: 1rem;
+  }
+
+  .sidebar-item {
+    margin-top: 2rem;
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .report-button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .search-container input::placeholder {
+    font-size: 12px;
+  }
+
+  .sidebar-container {
+    padding-top: 0.5rem;
+  }
+}

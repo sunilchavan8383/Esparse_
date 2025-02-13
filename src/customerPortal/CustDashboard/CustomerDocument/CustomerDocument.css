@@ -1,0 +1,108 @@
+.container {
+    width: 95%;
+    margin: auto;
+   
+  }
+
+  .headerdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  .header h2{
+    font-size: 18px;
+    color: #453823;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .tabs span {
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+  }
+  .tabsandbut{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .files-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .files-table th,
+  .files-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .files-table th {
+    
+    font-weight: bold;
+  }
+  
+  .files-table td .file-icon {
+    margin-right: 8px;
+  }
+  
+  .files-table td .avatar {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 8px;
+  }
+  
+  td .action-icons {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .icon {
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .delete {
+    color: red;
+  }
+  
+  .actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .filter-btn,
+  .export-btn {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .filter-btn {
+    background-color: #f0f0f0;
+  }
+  
+  .export-btn {
+    background-color: #800020;
+    color: white;
+  }
+  

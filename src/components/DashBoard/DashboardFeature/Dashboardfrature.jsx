@@ -11,88 +11,84 @@ import DivHtml2 from "./StatsDiv2/DivHtml2";
 import TransactionInformation from "./TransactionInformation/TransactionInformation";
 import SetUpProfile from './SetUpProfile/SetUpProfile'
 import { Link } from "react-router-dom";
+
 function DashBoardFeature() {
   return (
-    <div className="DashBoardFeatureCon">
-      <div className="greet">Hi XYZ, Welcome back </div>
-      <div className="stats1">
-      <div className="htmlOfDiv1">
-  
-      <div className='usersandimg'>
-      <div className="Users">Total Users</div>
-      <div className="Usersimg">
-       <img src={img1} alt="" />
-</div>
+    <div className="dashboardContainer">
+      <div className="dashboardGreeting">Hi XYZ, Welcome back </div>
+      <div className="dashboardStats">
+        <div className="dashboardCard1">
+          <div className='dashboardLabelIcon'>
+            <div className="dashboardUsers">Total Users</div>
+            <div className="dashboardIcon">
+              <img src={img1} alt="" />
+            </div>
+          </div>
+          <div className="dashboardCount">
+            <h1>20 k</h1>
+          </div>
+        </div>
 
-      </div>
-      
-      <div className="UserCount">
-        <h1>20 k</h1>
-      </div>
+        <div className="dashboardCard2">
+          <div className='dashboardLabelIcon'>
+            <div className="dashboardRevenue">Total Revenue Generated</div>
+            <div className="dashboardIcon">
+              <img src={img2} />
+            </div>
+          </div>
+          <div className="dashboardCount">
+            <h1>13,4321 k</h1>
+          </div>
+        </div>
 
+        <div className="dashboardCard3">
+          <div className='dashboardLabelIcon'>
+            <div className="dashboardGst">Total GST Collected</div>
+            <div className="dashboardIcon">
+              <img src={img3} />
+            </div>
+          </div>
+          <div className="dashboardCount">
+            <h1>5,4321 k</h1>
+          </div>
+        </div>
 
-
-  </div>
-  <div className="htmlOfDiv2">
-          <div className='Revenueandimg'>
-          <div className="RevenueLabel">Total Revenue Generated</div>
-      <div className="Usersimg">
-        <img src={img2}></img>
-      </div>
-      </div>
-   
-    <div className="RevenueCount">
-      <h1>13,4321 k</h1>
-    </div>
-
-  </div>,
-  <div className="htmlOfDiv3">
-              <div className='Gstandimg'>
-              <div className="GstLabel">Total GST Collected</div>
-      <div className="Usersimg">
-        <img src={img3}></img>
-      </div>
-      </div>
-   
-    <div className="GstCount">
-      <h1>5,4321 k</h1>
-    </div>
-  </div>,
-  <div className="htmlOfDiv4">
-                  <div className='Paymentandimg'>
-                  <div className="PaymentLabel">Outstanding Payment</div>
-      <div className="Usersimg">
-        <img src={img4}></img>
-      </div>
-      </div>
-    
-    <div className="PaymentCount">
-      <h1>2321 k</h1>
-    </div>
-  </div>,
+        <div className="dashboardCard4">
+          <div className='dashboardLabelIcon'>
+            <div className="dashboardPayment">Outstanding Payment</div>
+            <div className="dashboardIcon">
+              <img src={img4} />
+            </div>
+          </div>
+          <div className="dashboardCount">
+            <h1>2321 k</h1>
+          </div>
+        </div>
       </div>
 
-      <div className="stats2">
+      <div className="dashboardStats2">
         {DivHtml2.map((content2, index) => (
           <StatsDiv2 key={index} content2={content2} />
         ))}
       </div>
-      <div className="recentTransations">
-        <div className="TransactionHistory">
-          <div className="TransactionInfo1">Recent Transaction</div>
-          <div className="Alltrans">
+
+      <div className="dashboardTransactions">
+        <div className="transactionHistory">
+          <div className="transactionTitle">Recent Transactions</div>
+          <div className="allTransactions">
             <TransactionInformation />
           </div>
         </div>
-        <div className="PendingApproval" >
-          <Link to="/admin-dashboard/pending-aprovals">Pending Approval</Link>
+        <div className="pendingApproval">
+          <Link to="/admin-dashboard/pending-approvals">Pending Approval</Link>
         </div>
       </div>
+
       <div>
-        <SetUpProfile/>
+        <SetUpProfile />
       </div>
-      
     </div>
   );
 }
+
 export default DashBoardFeature;

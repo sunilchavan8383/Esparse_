@@ -1,0 +1,56 @@
+.user-settings-container {
+  width: 100%;
+  padding: 15px 30px;
+  align-items: center;
+  background-color: #f5f7f9;
+  display: grid;
+  grid-template-rows: 1fr 1fr 7fr;
+}
+
+.user-settings-header {
+  text-align: left;
+}
+
+.settings-title {
+  font-weight: bold;
+  color: #453823;
+  font-size: 18px;
+}
+
+/* Tabs Section */
+.settings-tabs {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.profile-tab {
+  border-radius: 5px 0px 0px 5px;
+ 
+}
+
+.logout-tab {
+  border-radius: 0px 5px 5px 0px;
+}
+
+.tab {
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid #8A4FFF;
+  color: #8A4FFF;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tab.active,
+.tab:hover {
+  background-color: #8A4FFF;
+  color: white;
+}
+
+.settings-content {
+  padding: 20px;
+}

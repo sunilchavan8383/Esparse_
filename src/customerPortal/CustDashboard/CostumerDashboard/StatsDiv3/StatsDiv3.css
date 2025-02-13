@@ -1,0 +1,10 @@
+.statsdivcontainer2 {
+  height: 100%;
+  width: 90%;
+  box-sizing: border-box;
+  border: 4px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: #f4f4f4;
+  box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.2);
+}

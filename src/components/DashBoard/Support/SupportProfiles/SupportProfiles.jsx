@@ -8,9 +8,7 @@ const HelpRequests = () => {
     { name: "Shubham Sharma", status: "Need help", time: "15 min", count: null },
     { name: "Shubham Sharma", status: "Need help", time: "15 min", count: null },
     { name: "Shubham Sharma", status: "Need help", time: "5 min", count: 2 },
-    { name: "Shubham Sharma", status: "Need help", time: "15 min", count: null },
-    { name: "Shubham Sharma", status: "Need help", time: "15 min", count: null },
-    { name: "Shubham Sharma", status: "Need help", time: "15 min", count: null },
+  
   ];
 
   return (
